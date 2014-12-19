@@ -14,9 +14,9 @@ public class BaseTestCase {
 
 	protected static WebDriver driver;
 	
-	public UserData admin = new UserData("Ñåðåäà Àëåêñàíäð Èãîðåâè÷","farr7@mail.ru",
-											"0936631070","óë. Êèáàëü÷è÷à 47",
-											"Õàðüêîâ","12345","12345");
+	public UserData admin = new UserData("Sereda Alex Igorovich","far7@mail.ru",
+											"0936631070","st.Kibalchucha 47",
+											"Kharkov","12345","12345");
 	
 	protected WebDriver getWebDriver(){
 		  if  (driver == null) {
