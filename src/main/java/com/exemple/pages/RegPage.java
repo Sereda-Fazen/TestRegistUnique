@@ -37,9 +37,11 @@ public class RegPage extends Page {
 	@FindBy(xpath = "//*[@id='content']/form/div[5]/div/input[2]")
 	public WebElement buttonlogin;
 	
-	@FindBy(linkText = "Выход")
+	@FindBy(linkText = "Г‚Г»ГµГ®Г¤")
 	public WebElement button;
 	
+	@FindBy(xpath = "//*[@id='wrapper']/div/div/div/div/div[1]/div/a")
+	public WebElement logout;
 	
 	
 	public RegPage(WebDriver driver) {
@@ -59,6 +61,7 @@ public class RegPage extends Page {
 		fieldChexbox.click();
 		buttonlogin.click();
 		button.click();
+		logout.click();
 		return PageFactory.initElements(driver, HomePage.class);
 		
 	}
